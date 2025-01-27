@@ -1,0 +1,92 @@
+.projects-table-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    background-color: #fff;
+  }
+  
+  .projects-table-container h2 {
+    font-size: 12px; /* Maximum font size for headings */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .completed-count {
+    font-size: 10px; /* Smaller font size for secondary text */
+    color: #68D391;
+    margin-bottom: 15px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+
+  }
+  .completed-count label {
+    color: #A0AEC0;
+  }
+  
+  .projects-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .projects-table th,
+  .projects-table td {
+    font-size: 10px; /* Font size for table content */
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 700;
+  }
+  
+  .projects-table th {
+    color: #A0AEC0;
+    text-transform: uppercase;
+    font-size: 9px;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .company-info img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .completion {
+    display: flex;
+    /* align-items: center;
+    justify-content: flex-start; */
+    flex-direction: column;
+    gap: 10px;
+    color: #4FD1C5;
+    text-align: left;
+  }
+  
+  .progress-bar {
+    width: 100px;
+    height: 5px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4FD1C5;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  
+  .menu {
+    color: #A0AEC0;
+    text-align: center;
+    cursor: pointer;
+  }
+  

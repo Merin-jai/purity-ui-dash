@@ -1,0 +1,229 @@
+/* Background container */
+.background {
+    display: flex;
+    align-items: center; /* Aligns content at the top */
+    height: auto; /* Full viewport height */
+    background-color: white; /* White background for the rest of the screen */
+    flex-direction: column;
+    background-image: url('../images/Image.png'); /* Path to your background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: contain; /* Keeps the image at its original size */
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    gap: 20px;
+}
+@media (max-width: 480px) {
+    .background {
+        background-size: cover;
+        padding: 10px;
+    }
+}
+.header-pos{
+    position : sticky;
+    z-index: 1000;
+    top : 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+.content div
+{
+    color: white;
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    line-height: 18.6px; /* to give space between lines */
+    text-align: center;
+}
+/* Form container */
+.login-form
+{
+    display: flex;
+    background-color: white;
+    width: 27%;
+    height: fit-content;
+    padding: 2%;
+    color: black;
+    border-radius: 15px;
+    flex-direction: column;
+    font-family: Helvetica;
+    gap: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+}
+/* title includes register with, icons and or */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+}
+
+.title label
+{
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    font-weight: 700;
+    color:#2D3748;
+}
+
+.social-icons
+{
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+.social-icons a{
+    border: 1px solid #E2E8F0;
+    border-radius: 25%;
+    padding: 17px;
+}
+.social-icons a:hover{
+    border-color: #4fd1c5;
+}
+.social-icons img
+{
+    width: 25px;
+    height: 25px;
+    
+}
+.col label
+{
+    color:#A0AEC0;
+}
+
+/* Input field styling */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width : 100%;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #E2E8F0;
+}
+
+/* Form styling */
+.register-form {
+    margin-top: 15px;
+    padding: 5%;
+    gap: 20px;
+    font-family: 'Helvetica';
+    font-size: clamp(0.4rem, 1vw, 0.6rem);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: inherit;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    color: #E2E8F0;
+}
+
+.form-group input:focus {
+    border-color: #4fd1c5;
+    outline: none;
+}
+
+/* Toggle button container */
+.toggle-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Toggle button */
+.toggle-button {
+    width: 36px;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button.active {
+    background-color: #4fd1c5; /* Active state color */
+}
+
+.toggle-circle {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.75px;
+    left: 2.5px;
+    transition: all 0.3s;
+}
+
+.toggle-button.active .toggle-circle {
+    transform: translateX(18px); /* Move the toggle circle */
+}
+
+/* Submit button */
+.ss-submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4fd1c5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #38b2ac;
+}
+
+.ss-footer-text{
+    font-size: clamp(10px, 1vw, 12px);
+    color: #A0AEC0;
+    text-align: center;
+}
+
+.ss-footer-text a{
+    color: #4fd1c5;
+    text-decoration: none;
+    font-weight: 700;
+}
+

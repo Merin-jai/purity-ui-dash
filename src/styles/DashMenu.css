@@ -1,0 +1,216 @@
+.dashmenu
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #F8F9FA;
+    width:15%;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    /* height: 100vh; */
+}
+
+.dashmenu-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #75a4d3; */
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    gap: 10px;
+    border-bottom: 2px solid #E2E8F0;
+    border-image: linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, #E0E1E2 49.52%, rgba(224, 225, 226, 0.15625) 99.04%);
+    border-image-slice: 1;
+}
+
+.dashmenu-logo img
+{
+    width: 21px;
+    height: 21px;
+    top: 44px;
+    left: 42px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.dashmenu-logo label
+{
+    font-size: clamp(11px,1vh,12px);
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    white-space: nowrap;
+
+}
+
+.dashmenu-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    padding-right: 10%;;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 0px;
+    margin-bottom: 12px;
+}
+.dashmenu-nav a{
+    text-decoration: none;
+}
+.dashmenu-nav a:hover{
+    background-color: #E2E8F0;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 0 5px 0 rgba(143, 136, 136, 0.1);
+    cursor: pointer;
+}
+
+.dash-nav-list
+{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 5px;
+    margin-left: 5px;;
+    width: 100%;
+    gap: 12px;
+}
+
+.dash-active
+{
+    background-color: #ffffff;
+    color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 0 5px 0 rgba(143, 136, 136, 0.1);
+    white-space: nowrap;
+    padding: 10px;
+}
+.dash-nav-list .nav-image
+{
+    width: 30px  ;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 35%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+.dash-active .nav-image
+{
+    background-color: #4FD1C5;
+    color: white;
+}
+.dash-icons
+{
+    width: 30px;
+    height: 30px;
+    color: #4FD1C5;
+}
+.dash-active .dash-icons
+{
+    width: 30px;
+    height: 30px;
+    color: #fdfdfd;
+}
+
+.dash-nav-list label{
+    font-size: clamp(9px,1vh,9px);
+    color: #A0AEC0;
+    font-weight: 700;
+}
+
+.dash-active label{
+    font-size: clamp(10px,1vh,10px);
+    color: black;
+}
+
+.dash-account{
+    color: black;
+    font-weight: 700;
+    font-size: clamp(10px,1vh,10px);
+    line-height: 18px;
+    padding: 15px;
+}
+
+.dashmenu-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 17px;;
+    width: 100%;
+}
+.dash-rect
+{
+    background-color: #4FD1C5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: inherit;
+    padding: 10px;
+}
+.dash-rect .nav-image{
+    width : 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 35%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+.dash-help{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: clamp(10px,1vh,10px);
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.dash-help-content{
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.dash-help-button{
+    background-color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: clamp(10px,1vh,10px);
+    text-align: center;
+}
+
+.circles{
+    width: 58.5px;
+    height: 58.5px;
+    top: 734.5px;
+    left: 226px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF
+}

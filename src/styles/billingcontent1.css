@@ -1,0 +1,323 @@
+.billingcontent
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    gap: 20px;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+}
+
+.billingcontent-left
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 65%;
+    max-width: 800px;
+    overflow: visible;
+}
+
+.billing-left-top{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: center;
+    gap: 19px;
+    /* flex-wrap: wrap; */
+    /* background-color: #002060; */
+}
+.billing-left-top img{
+    align-self: self-start ;
+}
+.image-container{
+    max-width: max-content;
+    /* background-color: #00bcd4; */
+    display: flex;
+    padding: 0;
+}
+.billing-salary{
+    background-color: white;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    border-radius: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    white-space: nowrap;
+    max-width: 100%;
+    max-height: auto;
+}
+.b-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    margin-left: 55px;
+    margin-right: 55px;
+
+}
+.wallet-icon{
+    background-color: #4FD1C5;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vh;
+    padding: 5px 10px;
+    width: 7vh;
+    height: 7vh;
+    margin-bottom: 25%;
+}
+.b-icons
+{
+    width: 3vh;
+    height: 3vh;
+}
+.billing-salary h6{
+    font-weight: 700;
+    font-size: clamp(2vh,1vh,2vh);
+    color: #2D3748;
+    margin-bottom: 5%;
+}
+.billing-salary label{
+    color: #A0AEC0;
+    font-weight: 700;
+    font-size: clamp(60%,1vh,60%);
+    padding-bottom: 7%;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, #E0E1E2 49.52%, rgba(224, 225, 226, 0.15625) 99.04%);
+    border-image-slice: 1;
+    margin-bottom: 15%;
+    letter-spacing: 0.1vh;
+
+}
+
+.billing-left-down{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 209, 146);
+    border-radius: 20%;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+}
+
+.billing-left-down .payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Container for Payment Method Section */
+.billing-left-down {
+    background-color: white;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  /* Header with Title and Add Card Button */
+  .payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-left {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .payment-right {
+    background-color: #000c40; /* Dark navy blue */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .payment-right:hover {
+    background-color: #002060; /* Slightly lighter shade on hover */
+  }
+  
+  /* Card Container */
+  .card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  /* Individual Card Item */
+  .card-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    flex: 1;
+    min-width: 300px; /* Ensures responsiveness */
+    justify-content: space-between;
+  }
+  
+  /* Card Icon Styling */
+  .card-icon .img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Card Number Styling */
+  .card-number {
+    font-size: 14px;
+    color: #333;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    padding: 5px;
+  }
+  
+  .edit-button:hover {
+    color: #000;
+  }
+
+  .billingcontent-right{
+    background-color: white;
+  }
+  
+  /* Container styling */
+.invoices-container {
+    background-color: white;
+    /* box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    border-radius: 15px;
+    width: 35%;
+    max-width: 600px;
+    padding: 20px;
+    padding-bottom: 22px;
+    /* margin: 20px auto; */
+  }
+  
+  /* Header section */
+  .invoices-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* .view-all-button {
+    background-color: #e6f7f7;
+    color: #00bcd4;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  } */
+  
+  /* .view-all-button:hover {
+    background-color: #d0f0f0;
+  } */
+  
+  /* Invoice list */
+  .invoices-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual invoice item */
+  .invoice-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #e0e0e0; */
+    padding-bottom: 10px;
+  }
+  
+  .invoice-item:last-child {
+    border-bottom: none;
+    /* margin-bottom: 0%; */
+  }
+  
+  /* Invoice info (left side) */
+  .invoice-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invoice-date {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2D3748;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .invoice-id {
+    font-size: 10px;
+    color: #A0AEC0;
+    margin: 2px 0 0 0;
+  }
+  
+  /* Invoice details (right side) */
+  .invoice-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .invoice-amount {
+    font-size: 12px;
+    color: #A0AEC0;
+    margin: 0;
+  }
+  
+  .invoice-pdf {
+    font-size: 10px;
+    font-weight: bold;
+    color: #2D3748;
+    text-decoration: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .invoice-pdf:hover {
+    text-decoration: underline;
+  }
+  

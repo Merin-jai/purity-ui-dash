@@ -1,0 +1,170 @@
+
+
+/* Header container */
+
+.header-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #4fd1c423;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    gap: 80px;
+    position: sticky;
+    top:0;
+}
+
+/* Logo styling */
+.header-signup .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.5rem, 1vw, 0.8rem); /* Dynamic font size */
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-signup .logo-image {
+    width: auto;
+    height: 25px;
+}
+
+/* Navigation styling */
+.header-signup .header-nav .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-signup .header-nav .nav-list li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(0.2rem, 1.7vw, 0.5rem); /* Adjust for screen sizes */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s;
+}
+
+.header-signup .header-nav .nav-list li a:hover {
+    color: #000201;
+}
+
+.header-signup .nav-image {
+    width: auto;
+    height: 10px;
+    color: white;
+}
+
+/* Button styling */
+.header-signup .download-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #4fd1c5;
+    border: none;
+    border-radius: 25px;
+    font-size: clamp(0.2rem, 1vw, 0.5rem); /* Dynamic font size */
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
+}
+
+.header-signup .download-button:hover {
+    background-color: #38b2ac;
+    color: white;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px 20px;
+    }
+
+    .header-left {
+        margin-bottom: 10px; /* Add spacing between sections */
+    }
+
+    .header-nav .nav-list {
+        flex-direction: column; /* Stack navigation links */
+        gap: 10px;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .download-button {
+        width: 100%; /* Full width button for smaller screens */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-nav .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .download-button {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+}
+
+/* end of header */
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: #4fd1c400;
+    border-radius: 15px 15px 0 0;
+    color: #bbb8b8;
+    gap: 30%;
+    font-family: Helvetica;
+    font-size: clamp(0.3rem, 1vw, 0.6rem);
+}
+
+.footer-left{
+    color: inherit;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.footer-left a{
+    text-decoration: none;
+    color: #4fd1c5;
+    font-weight: 700;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-right a{
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}

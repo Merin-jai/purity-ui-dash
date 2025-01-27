@@ -1,0 +1,443 @@
+
+/* Header container */
+.header-signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffffda;
+    border-radius: 15px ;
+    color: rgb(0, 0, 0);
+    gap: 80px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.5rem, 1vw, 0.8rem); /* Dynamic font size */
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo-image {
+    width: auto;
+    height: 25px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Navigation styling */
+.header-nav .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .nav-list li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: clamp(0.2rem, 1.7vw, 0.5rem); /* Adjust for screen sizes */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s;
+}
+
+.header-nav .nav-list li a:hover {
+    color: #38b2ac;
+}
+
+.nav-image {
+    width: auto;
+    height: 10px;
+    size: 50;
+    color: #000000;
+}
+
+/* Button styling */
+.download-button {
+    padding: 10px 20px;
+    background-color: rgb(22, 0, 0);
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    font-size: clamp(0.2rem, 1vw, 0.5rem); /* Dynamic font size */
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+.download-button:hover {
+    background-color: #38b2ac;
+    color: white;
+}
+
+/* Media Queries for Smaller Screens */
+/* @media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        padding: 10px 20px;
+    }
+
+    .header-left {
+        margin-bottom: 10px; 
+    }
+
+    .header-nav .nav-list {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    .download-button {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-nav .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .download-button {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+} */
+
+/* Navigation - Mobile View */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show menu icon */
+    }
+
+    .header-nav {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust to sit below the header */
+        right: 0;
+        background-color: #38b2ac;
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .header-nav.active {
+        display: flex; /* Show nav links when menu is open */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 1rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #4fd1c5;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .menu-icon {
+        font-size: 1.2rem;
+    }
+
+    .download-button {
+        font-size: 0.9rem;
+    }
+}
+
+/* end of header */
+
+.bg {
+    display: flex;
+    align-items: center; /* Aligns content at the top */
+    height: 100vh; /* Full viewport height */
+    background-color: white; /* White background for the rest of the screen */
+    flex-direction: column;
+    /* background-image: url('../images/Image.png'); Path to your background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: contain; /* Keeps the image at its original size */
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    gap: 20px;
+    padding: 10px;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+}
+
+/* .main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rosybrown;
+    background-image: url('../images/Image1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height : auto;
+    position : absolute;
+    top:0;
+    left : 0;
+    z-index: 0;
+
+}
+
+/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    background-color: rgba(255, 99, 71, 0.027);
+    padding: 29.5%;
+    box-sizing: border-box;
+} */
+
+/* .image{
+    background-color: #38b2ac;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+    background-image: url('../images/Image.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh; /* Make the div span the full viewport height */
+    position: absolute;
+    top : 0;
+    left: 0;
+    /* background-color: #000000; */
+}
+
+/* Left side with the background image */
+.main-content .image {
+    flex: 46%; 
+    background-image: url('../images/Image1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+    position: relative;
+    top: -15%;
+}
+
+/* Right side with the rosybrown background */
+.main-content .form {
+    flex: 60%; /* Occupies 50% width */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    color: #000000; /* Optional: Text color for contrast */
+    padding: 10% 3% 0% 25%; /* top right bottom left */
+    box-sizing: border-box;
+    font-family: Helvetica;
+    height: 100vh;
+    gap:20px;
+}
+
+.s-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+    background-color: #ffffff;
+}
+
+.signin-title {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 0%;
+    gap:10px;
+    color: #2D3748;
+}
+
+.signin-title div {
+    font-size: clamp(25px, 1vw, 25px);
+    font-weight: 700;
+    color: #4FD1C5;
+    margin-bottom: 0;
+}
+
+.signin-title aside{
+    color: #A0AEC0;
+    font-size: clamp(12px, 1vw, 12px);
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+/* Form container */
+.s-form-group {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.s-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+    color: #2D3748;
+    font-weight: 400;
+}
+
+.s-form-group input {
+    width: 80%;
+    padding: 12px;
+    font-size: inherit;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    color: #E2E8F0;
+}
+
+.s-form-group input:focus {
+    border-color: #4fd1c5;
+    outline: none;
+}
+
+/* Toggle button container */
+.s-toggle-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.s-form-group span {
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+    color: #000000;
+}
+
+/* Toggle button */
+.toggle-button {
+    width: 36px;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button.active {
+    background-color: #4fd1c5; /* Active state color */
+}
+
+.toggle-circle {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.75px;
+    left: 2.5px;
+    transition: all 0.3s;
+}
+
+.toggle-button.active .toggle-circle {
+    transform: translateX(18px); /* Move the toggle circle */
+}
+
+/* Submit button */
+.submit-button {
+    width: 80%;
+    padding: 15px;
+    background-color: #4fd1c5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #38b2ac;
+}
+
+.footer-text{
+    font-size: clamp(10px, 1vw, 12px);
+    color: #A0AEC0;
+    padding-left: 20%;
+    padding-top: 2%;
+    
+}
+
+.footer-text a{
+    color: #4fd1c5;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signin-footer{
+    position: relative;
+    top: 67%;
+}

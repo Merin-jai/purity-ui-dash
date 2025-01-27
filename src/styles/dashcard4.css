@@ -1,0 +1,118 @@
+.dashboard4 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .projects-section,
+  .orders-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects-section {
+    flex: 3;
+  }
+  
+  .orders-section {
+    flex: 1;
+  }
+  
+  .projects-section h2,
+  .orders-section h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .completed-count,
+  .order-summary {
+    font-size: 10px;
+    color: #34c759;
+    margin-bottom: 15px;
+  }
+  
+  .projects-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .projects-table th,
+  .projects-table td {
+    font-size: 10px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .company-info img {
+    width: 20px;
+    height: 20px;
+  }
+  .members{
+    display: flex;
+    gap : -5px;
+  }
+  .members img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .completion {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+  }
+  
+  .progress-bar {
+    width: 100px;
+    height: 5px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4FD1C5;
+    border-radius: 3px;
+  }
+  
+  .orders-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .order-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .order-description {
+    font-size: 10px;
+    margin: 0;
+  }
+  
+  .order-time {
+    font-size: 8px;
+    color: #999;
+  }
+  

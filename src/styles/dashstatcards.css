@@ -1,0 +1,66 @@
+.stat-card-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .stat-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    max-width: 305px;
+    background-color: white;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+    border-radius: 12px;
+  }
+
+  .stat-info{
+    /* margin-right: 20%; */
+  }
+  
+  .stat-card-title {
+    font-size: 14px;
+    color: #A0AEC0;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-bottom: 7px;
+  }
+  
+  .stat-card-value-container {
+    font-size: 14px;
+    color: #2d3748;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .stat-percentage-positive {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #48bb78;
+    font-weight: 600;
+  }
+  
+  .stat-percentage-negative {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #f56565;
+    font-weight: 600;
+  }
+  
+  .stat-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4FD1C5;
+    color: #ffffff;
+    border-radius: 25%;
+    font-size: 20px;
+    box-shadow: 0px 3.5px 5.5px 0px #00000005;
+  }
+  

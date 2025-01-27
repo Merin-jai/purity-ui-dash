@@ -1,0 +1,103 @@
+.Profile
+{
+    background-color: #ffffff00;
+    position: fixed;
+    left: 17%;
+    top : 2%;
+    width : 80%;
+    white-space: nowrap;
+    font-size: clamp(12px,1vh,12px);
+    z-index: 1;
+    color: white;
+}
+.Billing,.Tables,.Dashboard{
+    white-space: nowrap;
+    color: #718096;
+    font-size: clamp(12px,1vh,12px);
+}
+
+
+
+.dashheader-main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.dashheader-left{
+    display:flex;
+    flex-direction: column;
+    white-space: nowrap;
+    gap:2px;
+}
+.Billing>div>div>div>span,
+.Tables>div>div>div>span,
+.Dashboard>div>div>div>span{
+    color : black;
+}
+.Billing .theme, .Tables .theme, .Dashboard .theme{
+    color : black;
+}
+.theme{
+    font-weight: 700;
+}
+
+
+.dashheader-right{
+    display: flex;
+    flex-direction: row;
+    gap : 20px
+}
+
+.dash-search{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 17px;
+    padding : 1%
+}
+
+.dash-search:hover
+{
+    border: 1px solid #4FD1C5;
+    background-color: #4FD1C5;
+}
+.dash-search span{
+    padding: 5px;
+    width : 25px;
+    height : 20px;
+}
+.dash-search input{
+   border: none;
+   width: 100%;
+   background-color: inherit;
+}
+
+.dash-search input :focus{
+    border: 1px solid white;
+    background-color: black;
+}
+
+.dash-header-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:15px;
+}
+.dash-header-icons a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.dash-header-icons aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 3px;
+    font-weight: 600;
+}
+
+  
