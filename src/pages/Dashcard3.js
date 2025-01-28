@@ -7,49 +7,64 @@ import ApexCharts from 'apexcharts'
 
 const DashboardCharts = () => {
     useEffect(() => {
-        const options = {
-          series: [
-            {
-              name: "series1",
-              data: [31, 40, 28, 51, 42, 109, 100],
-            },
-            {
-              name: "series2",
-              data: [11, 32, 45, 32, 34, 52, 41],
-            },
-          ],
-          chart: {
-            height: 350,
-            type: "area",
-          },
-          dataLabels: {
-            enabled: false,
-          },
-          stroke: {
-            curve: "smooth",
-          },
-          xaxis: {
-            type: "datetime",
-            categories: [
-              "2018-09-19T00:00:00.000Z",
-              "2018-09-19T01:30:00.000Z",
-              "2018-09-19T02:30:00.000Z",
-              "2018-09-19T03:30:00.000Z",
-              "2018-09-19T04:30:00.000Z",
-              "2018-09-19T05:30:00.000Z",
-              "2018-09-19T06:30:00.000Z",
+        var options = {
+            series: [
+              {
+                name: "Values",
+                data: [350, 220, 100, 300, 500, 400, 450],
+              },
             ],
-          },
-          tooltip: {
-            x: {
-              format: "dd/MM/yy HH:mm",
+            chart: {
+                height : "100%",
+                width : "100%",
+              type: "bar",
+              height: 350,
+              background: "linear-gradient(135deg, #2e2f45, #1a1b2c)", // Dark gradient background
             },
-          },
-        };
-    
-        const chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-    
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                columnWidth: "20%",
+                borderRadius: 5, // Rounded corners
+                borderRadiusApplication: "all", // Rounded on both top and bottom
+              },
+            },
+            dataLabels: {
+              enabled: false, // Hides labels on the bars
+            },
+            stroke: {
+              show: false, // Disables bar border stroke
+            },
+            xaxis: {
+              labels: {
+                show: false, // Hides X-axis labels
+              },
+              axisBorder: {
+                show: false, // Hides X-axis baseline
+              },
+            },
+            yaxis: {
+              labels: {
+                style: {
+                  colors: "#ffffff", // White Y-axis labels
+                  fontSize: "12px",
+                },
+              },
+            },
+            grid: {
+              show: false, // Removes grid lines
+            },
+            fill: {
+              colors: ["#ffffff"], // White bars
+            },
+            tooltip: {
+              enabled: false, // Disables tooltip
+            },
+          };
+          
+          var chart = new ApexCharts(document.querySelector("#chart"), options);
+          chart.render();
+          
         // Cleanup on component unmount
         return () => {
           chart.destroy();
@@ -60,7 +75,8 @@ const DashboardCharts = () => {
       {/* Bar Chart Section */}
       <div className="chart-card">
         <div className="chart-image">
-          <img src= { Graph1 } alt="Bar Chart" />
+          {/* <img src= { Graph1 } alt="Bar Chart" /> */}
+          <div id="chart" className="chart-graph1"></div>
         </div>
         <div className="chart-details">
           <h3>Active Users</h3>
@@ -96,7 +112,7 @@ const DashboardCharts = () => {
         </p>
         <div className="chart-image">
           {/* <img src= { Graph2 } alt="Line Chart" /> */}
-          <div id="chart"></div>
+          {/* <div id="chart1" className="chart-graph1"></div> */}
         </div>
       </div>
     </div>

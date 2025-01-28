@@ -5,7 +5,7 @@
     /* justify-content: center; */
     align-items: center;
     background-color: #F8F9FA;
-    width:15%;
+    width:clamp(15%, 20vw, 100%);
     font-family: Helvetica;
     box-sizing: border-box;
     /* height: 100vh; */
@@ -214,3 +214,27 @@
     opacity: 0px;
     border: 1px solid #FFFFFF
 }
+
+@media (max-width: 768px) {
+    .dashmenu {
+      width: 100%;
+      height: auto;
+    }
+    .dash-nav-list label {
+      font-size: clamp(8px, 1vh, 10px);
+    }
+    .dashmenu-footer {
+      flex-direction: column;
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashmenu-nav {
+      gap: 5px;
+    }
+    .dash-nav-list {
+      padding: 3px;
+    }
+  }
+  

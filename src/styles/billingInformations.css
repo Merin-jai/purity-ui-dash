@@ -221,6 +221,128 @@
     color: #2D3748;
   }
   
+  @media (max-width : 768px) {
+    .billing-container{
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .billing-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .billing-info, .transactions-info {
+        width: 90%; /* Reduce width for smaller screens */
+        max-width: 700px;
+    }
+
+    .billing-actions {
+        flex-direction: column; /* Stack actions vertically */
+        gap: 5px;
+    }
+
+    .transactions-header {
+        flex-direction: column; /* Align header items vertically */
+        gap: 10px;
+    }
+
+    .transactions-date {
+        font-size: 10px;
+    }
+
+    .transaction-item {
+        padding: 10px 0; /* Adjust spacing */
+    }
+
+    .transaction-details {
+        padding-right: 20%;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .billing-container {
+        padding: 10px;
+    }
+
+    .billing-info, .transactions-info {
+        width: 100%; /* Full width on mobile */
+        padding: 15px;
+    }
+
+    .billing-card {
+        flex-direction: column; /* Stack billing card content */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .billing-details h5, .billing-details p {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+
+    .billing-actions button {
+        font-size: 10px;
+    }
+
+    .transactions-header {
+        flex-direction: column; /* Stack title and date */
+        gap: 5px;
+    }
+
+    .calendar-info {
+        flex-direction: row;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .transaction-item {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .transaction-details {
+        padding-right: 0; /* Remove excess padding */
+    }
+
+    .transaction-amount {
+        font-size: 12px;
+        text-align: left; /* Align text for mobile */
+    }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+    .billing-info, .transactions-info {
+        padding: 10px;
+    }
+
+    .billing-card {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .transactions-list {
+        gap: 10px; /* Reduce space between transactions */
+    }
+
+    .transaction-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .arrow-button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .transaction-amount {
+        font-size: 10px; /* Smaller text size */
+    }
+}
 
   
   

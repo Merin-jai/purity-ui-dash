@@ -7,10 +7,17 @@ import { FaFacebook, FaGoogle, FaApple } from "react-icons/fa";
 
 function SignUp() {
     const [rememberMe, setRememberMe] = useState(false);
+    const [name,setname] =useState('');
 
     const toggleRememberMe = () => {
         setRememberMe(!rememberMe);
     };
+
+    const handleSubmit =  (event)=>{
+            event.preventDefault();
+            console.log("Name : ",name);
+            alert(`Name : name`);
+    }
     return (
         <main className="background">
             {/* <img src={require('../images/Image.png')} alt="background" /> */}
@@ -32,9 +39,9 @@ function SignUp() {
                     </div> */}
     
                     <div class="social-icons">
-                        <a href="" class="facebook"><FaFacebook style={{ color: "#2D3748", fontSize: "24px"}}/></a>
-                        <a href="#" class="facebook"><FaApple style={{ color: "#2D3748", fontSize: "24px" }}/></a>
-                        <a href="#" class="google"><FaGoogle style={{ color: "#2D3748", fontSize: "24px" }}/></a>
+                        <a href="" class="facebook"><FaFacebook style={{ color: "#2D3748"}}/></a>
+                        <a href="#" class="facebook"><FaApple style={{ color: "#2D3748"}}/></a>
+                        <a href="#" class="google"><FaGoogle style={{ color: "#2D3748" }}/></a>
                     </div>
                     <div class="col"><label>or</label></div>
                 </div>
@@ -47,10 +54,10 @@ function SignUp() {
                     </form>
                 </section> */}
 
-                <form className="register-form">
+                <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" placeholder="Your full name" />
+                    <input type="text" id="name" placeholder="Your full name" value = {name} onChange={(event)=>setname(event.target.value)}/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>

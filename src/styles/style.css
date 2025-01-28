@@ -40,6 +40,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-signup .header-nav .nav-list li a {
@@ -88,6 +91,10 @@
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
+    .header-signup{
+        flex: wrap;
+        gap : 10px;
+    }
     .header {
         flex-direction: column; /* Stack elements vertically */
         padding: 10px 20px;
@@ -113,6 +120,10 @@
 }
 
 @media (max-width: 480px) {
+    .header-signup{
+        flex: wrap;
+        gap : 10px;
+    }
     .header-nav .nav-list {
         flex-direction: column;
         gap: 10px;

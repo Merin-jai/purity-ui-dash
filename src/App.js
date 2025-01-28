@@ -11,6 +11,7 @@ import Dashboard from './pages/Dashboard';
 import Projects from './pages/projects';
 import Billing from './pages/Billing';
 // import BillingInformations from './pages/BillingInformations';
+import DashPage from './pages/Dashcard3';
 import Tables from './pages/Tables';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/project" element={<Projects/>}/>
         <Route path="/billing" element={<Billing/>}/>
         {/* <Route path="/billingcontent" element={<BillingInformations/>}/> */}
+        <Route path="/dashcard" element={<DashPage/>}/>
         <Route path="/tables" element={<Tables/>}/>
       </Routes>
     </BrowserRouter>

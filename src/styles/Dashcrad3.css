@@ -6,7 +6,7 @@
   }
   
   .chart-card {
-    width: fit-content;
+    width: 100%;
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -14,17 +14,27 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: #00000000;
   }
   
   .chart-image {
-    width: 100%;
-    height: 200px;
+    width: 80vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
+  }
+  .chart-graph1{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+
+  }
+  .chart-card{
+    width: fit-content;
   }
   
   .chart-image img {

@@ -320,4 +320,118 @@
   .invoice-pdf:hover {
     text-decoration: underline;
   }
+
+
+  @media (max-width: 1199px) {
+    .billingcontent {
+        /* flex-direction: column;  */
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .billingcontent-left,
+    .invoices-container {
+        width: 90%; /* Take full width */
+        max-width: 700px;
+    }
+
+    .billing-left-top {
+        /* flex-direction: column;  */
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .b-container {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center; /* Center-align for smaller screens */
+    }
+
+    .wallet-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .billingcontent {
+        gap: 10px; /* Reduce gap between sections */
+    }
+
+    .billing-left-down,
+    .invoices-container {
+        padding: 10px;
+    }
+
+    .payment-right {
+        font-size: 12px; /* Adjust button font size */
+        padding: 8px 15px;
+    }
+
+    .card-item {
+        flex-direction: column; /* Stack content inside cards vertically */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .card-number {
+        font-size: 12px;
+    }
+
+    .header h3 {
+        font-size: 14px; /* Reduce heading size */
+    }
+
+    .view-all-button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .invoice-item {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .invoice-info {
+        margin-bottom: 5px;
+    }
+
+    .invoice-pdf {
+        font-size: 12px;
+    }
+}
+
+/* Extra-small screens */
+@media (max-width: 480px) {
+    .billingcontent-left,
+    .invoices-container {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .billing-left-down {
+        border-radius: 10px;
+    }
+
+    .wallet-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .b-icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-item {
+        padding: 10px;
+    }
+
+    .invoice-details {
+        gap: 10px;
+    }
+}
   

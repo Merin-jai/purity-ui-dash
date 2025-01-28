@@ -47,6 +47,7 @@
     display: flex;
     background-color: white;
     width: 27%;
+    min-width: 27%;
     height: fit-content;
     padding: 2%;
     color: black;
@@ -57,6 +58,7 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     
 }
+
 /* title includes register with, icons and or */
 .title{
     display: flex;
@@ -84,6 +86,7 @@
     border: 1px solid #E2E8F0;
     border-radius: 25%;
     padding: 17px;
+    font-size: 24px;
 }
 .social-icons a:hover{
     border-color: #4fd1c5;
@@ -157,6 +160,7 @@ input{
 .form-group input:focus {
     border-color: #4fd1c5;
     outline: none;
+    color: #000000;
 }
 
 /* Toggle button container */
@@ -227,3 +231,20 @@ input{
     font-weight: 700;
 }
 
+@media(max-width : 760px){
+    .login-form{
+        width: fit-content;
+        height: auto;
+
+    }
+
+    .social-icons{
+        gap:5px
+    }
+    .social-icons a {
+        border: 1px solid #E2E8F0;
+        border-radius: 12%;
+        padding: 7px;
+        font-size: 15px;
+    }
+}
