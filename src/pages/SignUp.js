@@ -57,15 +57,15 @@ function SignUp() {
                 <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" placeholder="Your full name" value = {name} onChange={(event)=>setname(event.target.value)}/>
+                    <input type="text" id="name" placeholder="Your full name" value = {name} onChange={(event)=>setname(event.target.value)} required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" placeholder="Your email address" />
+                    <input type="email" id="email" placeholder="Your email address" required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" placeholder="Your password" />
+                    <input type="password" id="password" placeholder="Your password" required/>
                 </div>
                 <div className="form-group toggle-group">
                     <div
